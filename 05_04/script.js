@@ -1,38 +1,3 @@
-
-/*const createCard = (title, desc, imgUrl, vote) => {
-    const divEl = document.createElement("div");
-    const h3El = document.createElement("h3");
-    const parDescEl = document.createElement("p");
-    const imgEl = document.createElement("img");
-    const voteEl = document.createElement("p")
-
-    divEl.classList.add("card");
-    parDescEl.classList.add("description");
-
-    imgEl.setAttribute("src", imgUrl);
-    imgEl.setAttribute("alt", "img cosi");
-    h3El.textContent =title;
-    parDescEl.textContent = desc;
-    voteEl.textContent = vote;
-
-    divEl.append(h3El, parDescEl, imgEl);
-    document.body.appendChild(divEl);
-    document.querySelector(".cardsWrapper").appendChild(divEl);
-
-};
-
-let dataArray = [];
-
-// CHIAMATA FETCH
-fetch("https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=1a2079b33da17fd8434aa19d53bbe1c7") 
-  .then((res) => res.json())
-  .then((data) => {
-      const baseUrl = 'https://image.tmdb.org/t/p/w200'
-      data.results.map(product => createCard(product.title, product.overview, baseUrl+product.poster_path))
-  });
-    
-*/
-
 const API_URL = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=1a2079b33da17fd8434aa19d53bbe1c7&page=1";
 const IMAGE_PATH = "https://image.tmdb.org/t/p/w200/";
 const SEARCH_URL = "https://api.themoviedb.org/3/search/movie?api_key=1a2079b33da17fd8434aa19d53bbe1c7&query=\""
